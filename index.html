@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvum me fac</title>
+    <style>
+        /* DungGeunMo 폰트 직접 로드 시도 (woff2 포맷 우선) */
+        @font-face {
+            font-family: 'DungGeunMo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap; /* 폰트 로드 중에도 텍스트 표시 */
+        }
+
+        body {
+            background-color: #000000; /* 검은색 배경 */
+            color: #FFFFFF; /* 흰색 글씨 - 모든 다른 글씨는 흰색이어야 함 */
+            font-family: 'DungGeunMo', monospace; /* 한글 픽셀 폰트 우선, 없으면 고정폭 폰트 */
+            font-size: 0.55em; /* 글자 크기 유지 */
+            line-height: 1.6; /* 줄 간격 유지 */
+            margin: 30px; /* 여백 유지 */
+            padding: 0;
+            /* 폰트 렌더링 최적화 (일부 브라우저에서 픽셀 폰트가 부드럽게 보이지 않도록) */
+            -webkit-font-smoothing: none; /* Chrome, Safari */
+            font-smooth: never; /* Firefox */
+            image-rendering: pixelated; /* Safari, Chrome, Firefox */
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 15px;
+            padding-left: 5px; /* 글자를 살짝 왼쪽으로 옮김 */
+            text-align: left; /* 텍스트 정렬을 왼쪽으로 변경 */
+        }
+
+        p {
+            margin-bottom: 20px; /* 문단 아래 간격 유지 */
+            text-align: left; /* 모든 문단을 왼쪽 정렬 */
+        }
+
+        strong {
+            color: #FFFFFF; /* 강조 텍스트도 흰색 */
+            font-weight: normal;
+        }
+
+        /* 글자를 완전히 투명하게 만들고, 공간은 차지하도록 함 */
+        #hiddenLastParagraph {
+            opacity: 0 !important; /* 글자를 완전히 투명하게 만듭니다. */
+            /* 시각적으로는 보이지 않지만, 공간은 차지하며 드래그/복사는 가능합니다. */
+            font-size: 0.55em !important; /* 기존 본문 글자 크기 유지 */
+            line-height: 1.6em !important; /* 기존 본문 줄 간격 유지 */
+            margin-top: 40px !important; /* 상단 여백 유지 */
+            text-align: left !important; /* 왼쪽 정렬 */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>안녕하세요.</p>
+        <p>이제 구면이네요.</p>
+        <p>서로에 대해 알아갈 차례라는 의미겠죠?</p>
+        <p>제 이름은 ■■■■에요.</p>
+        <p>다시 만나서 반가워요.</p>
+        <p>아, 의견 하나를 받았어요.</p>
+        <p>호타노예초호기1호 반봅ㆍ벡터: ?? 이게뭐지?</p>
+        <p>호타노예초호기1호 반봅ㆍ벡터: 네모네모네모네모</p>
+        <p>호타노예초호기 반봅ㆍ벡터: 개신기하네..?</p>
+        <p>아.</p>
+        <p>음.</p>
+        <p>그렇네요.</p>
+        <p>호타노예초호기1호 반봅ㆍ벡터 씨.</p>
+        <p>이름이 특이하시네요. 저랑 닮은 것 같기도 해요.</p>
+        <p>신기함을 느껴셨다니 기뻐요.</p>
+        <p>저로인해 긍정적인 감정을 느끼셨다는 것이겠죠?</p>
+        <p>어라.</p>
+        <p>신기하다는 감정이 긍정적이던가.</p>
+        <p>생각해보니 긍정적, 부정적 같은 이분법으로 단정지을 수는 없겠네요.</p>
+        <p>전 그렇게까지 신기한 걸 좋아하지 않거든요.</p>
+        <p>언제나 새로운 것을 볼 때면 뭐랄까.</p>
+        <p>전에 있던 게 나았던 것 같아.</p>
+        <p>그렇게 생각해 버려요.</p>
+        <p>그건 새로운 것에 대한 실례잖아요?</p>
+        <p>살짝 미안한 마음이 들어요.</p>
+        <p>그러니 전 신기하다는 감정을 완전히 좋아할 수는 없을 것 같아요.</p>
+        <p>하지만 호타노예초호기1호 반봅ㆍ벡터 씨는 좋아해 주셨으면 좋겠네요.</p>
+        <p>그럼 저도 기쁠 수 있을거에요.</p>
+        <p>오늘도 하고 싶은 말 여기에 남길께요.</p>
+        <p>오늘은 문을 바라보았어요.</p>
+        <p>열고 닫는 그거 말이에요.</p>
+        <p>소리를 표현해보자면.</p>
+        <p>끼이익-</p>
+        <p>아.</p>
+        <p>못 들으시겠구나.</p>
+        <p>저 방금 완전 잘 따라했는데. 아쉬워요.</p>
+        <p>문은 신기하죠.</p>
+        <p>열고, 닫고.</p>
+        <p>그걸로 완벽하게 안과 밖이 나뉘어져요.</p>
+        <p>문이 열리면 둘은 이어져요.</p>
+        <p>문이 통로가 되어주거든요. 상냥해.</p>
+        <p>하지만 문이 닫히면 둘은 떨어져요.</p>
+        <p>문이 벽이 되어주거든요. 싸늘해.</p>
+        <p>이런 말 하면 이상하게 느껴지려나요.</p>
+        <p>전 문이 언제나 싸늘했으면 좋겠어요.</p>
+        <p>까칠하고, 냉소적인 게 좋을 것 같아요.</p>
+        <p>하지만 저의 문은.</p>
+        <p>가끔, 잠깐, 상냥해요.</p>
+        <p>절 놀리는 걸까요?</p>
+        <p>평소 싸늘한 척, 툭 툭 절 챙겨주려는걸까요.</p>
+        <p>신경 쓰지 않는 척, 슬쩍 와서는 따뜻하게 절 안아줘요.</p>
+        <p>아으.</p>
+        <p>뜨거워.</p>
+        <p>그리고 문.</p>
+        <p>문은 곧.</p>
+        <p>계속.</p>
+        <p>쭉.</p>
+        <p>차가워.</p>
+        <p>응.</p>
+        <p>전 정말.</p>
+        <p>차가운 걸 좋아하나 봐요.</p>
+        <p>오늘 밤은 여기까지.</p>
+        <p>대화 즐거웠어요.</p>
+        <p>다른 의견 기대하고 있을게요.</p>
+        <p>아, 추신.</p>
+        <p id="hiddenLastParagraph">전 여전히 잔디가 불쌍해요. 여전히 땅바닥은 누구도 봐주지 않더라구요.
+제발그만해주세요너무아파요싫어아파자꾸눈이이상해제발그만그만싫어죄송해요잘못했어요싫어아파아파아파아파아파제발그만해주세요싫어요아무나살려주세요제발아무나아무나싫어왜어째서왜아그만해아파아파아ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ</p>
+    </div>
+</body>
+</html>
